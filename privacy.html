@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="MarbleRace Backup의 개인용 Google Drive 백업 데이터 처리 및 인증 정보 보호 안내.">
+  <title>개인정보처리방침 — MarbleRace Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">MARBLERACE BACKUP</p>
+      <h1>개인정보처리방침</h1>
+      <p class="lead">개인 운영용 백업 도구와 이 안내 사이트의 데이터 처리 범위를 구분해 설명합니다.</p>
+      <p><a href="index.html">앱 안내로 돌아가기</a></p>
+    </header>
+    <section aria-labelledby="scope">
+      <h2 id="scope">1. 적용 범위와 운영자</h2>
+      <p>MarbleRace Backup은 운영자 자신의 PC 자료를 운영자 자신의 Google Drive에 백업하는 개인용 도구입니다. 운영자는 <a href="https://github.com/superbong-begins" rel="noopener noreferrer">superbong-begins</a>입니다. 일반 이용자를 모집하거나 타인의 Google 계정에 연결하는 서비스를 제공하지 않습니다.</p>
+    </section>
+    <section aria-labelledby="data">
+      <h2 id="data">2. 접근하는 데이터와 이용 목적</h2>
+      <p>Google Drive의 파일·폴더 목록, 식별자, 크기, 수정 시각 등 메타데이터와 백업 저장소의 파일 내용에 접근할 수 있습니다. Google 계정 식별 정보는 Google 로그인 및 권한 동의 과정에서 사용됩니다.</p>
+      <p>이 접근은 백업 저장소 확인, 암호화 백업 업로드, 저장 용량 확인, 무결성 검사, 다운로드·복원, 운영자가 실행한 보관 정책 정리에만 사용합니다. 광고, 판매, 사용자 프로파일링, 범용 AI 모델 학습을 위해 Google 사용자 데이터를 이용하지 않습니다.</p>
+      <p>Google의 Drive 전체 접근 권한을 사용하면 토큰의 권한은 계정의 다른 Drive 파일에도 미칠 수 있습니다. 도구의 전용 폴더 설정은 작업 대상 제한이며 Google OAuth 권한 자체의 폴더별 격리는 아닙니다.</p>
+    </section>
+    <section aria-labelledby="storage">
+      <h2 id="storage">3. 저장·전송과 정보 보호</h2>
+      <p>백업 파일 내용은 로컬 PC에서 restic으로 암호화한 뒤 HTTPS 연결을 통해 Google Drive에 전송합니다. Google은 암호화된 저장 객체 및 서비스 제공에 필요한 계정·저장·전송 정보를 처리합니다. 암호화는 백업 삭제나 계정 탈취를 막는 수단은 아닙니다.</p>
+      <p>OAuth 인증 정보는 로컬 백업 도구의 접근 제한된 설정에 보관합니다. 백업 복구키는 로컬 보호 파일과 운영자가 별도로 보관한 안전한 사본으로 관리합니다. 인증 정보·복구키·백업 내용은 이 사이트나 공개 소스 저장소에 게시하지 않습니다.</p>
+      <p>데이터를 판매하거나 광고 사업자에게 공유하지 않습니다. 백업 저장을 위한 Google Drive와 공개 안내 페이지 호스팅을 위한 GitHub의 처리는 각 제공자의 정책을 따릅니다.</p>
+    </section>
+    <section aria-labelledby="retention">
+      <h2 id="retention">4. 보관과 삭제</h2>
+      <p>운영자가 직접 백업·검증·정리 절차를 실행합니다. 목표 보관 정책은 최근 정상 백업을 수행한 서로 다른 날짜의 두 복원점과 별도로 복원 시험을 통과한 기준본 한 개입니다. 실패·미검증 백업이나 기준본 미확정 상태에서는 정리를 보류할 수 있으며, 자동 예약 실행은 사용하지 않습니다.</p>
+      <p>이 정책은 백업 저장소의 복원점에 적용하며 PC 원본 파일을 삭제하는 정책이 아닙니다. 이전 백업의 삭제는 암호화 저장소의 정리 도구로 수행합니다. Google Drive 휴지통이나 제공자 정책에 따라 데이터가 일정 기간 추가 보관될 수 있습니다.</p>
+    </section>
+    <section aria-labelledby="revoke">
+      <h2 id="revoke">5. 접근 철회와 운영자 제어</h2>
+      <p>운영자는 Google 계정의 보안 설정에서 앱의 접근 권한을 철회할 수 있습니다. 철회 후에는 다시 인증하기 전까지 백업·검사·복원 작업이 실패할 수 있습니다. 접근 철회만으로 기존 Drive 백업이 삭제되지는 않습니다. 저장된 백업의 삭제는 별도로 수행해야 합니다.</p>
+    </section>
+    <section aria-labelledby="website">
+      <h2 id="website">6. 이 안내 사이트의 방문 정보</h2>
+      <p>이 사이트에는 로그인, 입력 양식, 자체 분석 도구, 광고, 추적 스크립트 또는 외부 폰트가 없습니다. 백업 도구를 실행하거나 Google Drive에 접속하는 기능도 없습니다.</p>
+      <p>호스팅 제공자 GitHub는 사이트 방문 시 보안 목적 등으로 방문자의 IP 주소와 접속 정보를 처리할 수 있습니다. 자세한 내용은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 개인정보처리방침</a>과 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a>을 참고해 주세요.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">7. 문의와 변경</h2>
+      <p>운영 관련 문의는 <a href="https://github.com/superbong-begins" rel="noopener noreferrer">운영자의 GitHub 프로필</a>을 통해 확인할 수 있는 기존 연락 수단을 사용해 주세요. 공개 문의에는 인증 정보, 복구키 또는 백업 파일을 포함하지 마세요.</p>
+      <p>앱의 데이터 처리 방식이 바뀌면 이 안내를 수정하고 아래 갱신일을 변경합니다.</p>
+    </section>
+    <footer><p>시행 및 최종 갱신: <time datetime="2026-10-07">2026년 10월 7일</time> · <a href="index.html">MarbleRace Backup</a></p></footer>
+  </main>
+</body>
+</html>
